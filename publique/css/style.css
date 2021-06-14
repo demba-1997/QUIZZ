@@ -31,42 +31,6 @@ a {
     border: 0px;
 }
 
-body {
-    background-image: url(flower-field-250016_1280.jpg);
-}
-
-#se {
-    text-align: center;
-    background-color: red;
-    height: 60px;
-    color: white;
-    padding: 10px;
-}
-
-#si {
-    background-color: red;
-    margin-left: -2%;
-    margin-right: -2%;
-    color: white;
-    height: 50px;
-    padding: 10px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.container {
-    border: 0px solid white;
-    max-width: 60%;
-    background-color: white;
-    border-radius: 10px 10px 10px 10px;
-    height: 320px;
-}
-
-a {
-    margin-left: 30%;
-    border-bottom: 1px solid black;
-    color: black;
-}
-
 #int {
     position: absolute;
     margin-top: 2%;
@@ -80,15 +44,6 @@ a {
 .btn {
     background-color: red;
     border: 0px;
-}
-
-body {
-    background-image: url(flower-field-250016_1280.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 0%;
-    background-size: 100%;
-    background-size: cover;
 }
 
 #lo {

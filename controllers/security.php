@@ -59,42 +59,29 @@ function inscription(array $data): void {
     validation_password($password, 'password', $arrayError);
     validation_champ($prenom, 'prenom', $arrayError);
     validation_champ($nom, 'nom', $arrayError);
-    validation_champ($datenaiss, 'datenaiss', $arrayError);
-    if ($password!= $confirmpassword) {
-        $arrayError['confirmpassword'] = 'la confirmation password est obligatoire';
-    }
+    // if ($password!= $confirmpassword) {
+    //     $arrayError['confirmpassword'] = 'la confirmation password est obligatoire';
+    // }
     if (est_vide($prenom , $nom)) {
         $_SESSION['arrayError'] = $arrayError;
         header("location:".WEB_ROUTE.'?controllers=security&view=inscription');
     }
     if (form_valid($arrayError)) {
-        $user= find_login_password($login, $password);
+
         if (est_admin()) {
             $data['role'] = 'ROLE_ADMIN';
            }else {
                 $data['role'] = 'ROLE_JOUEUR';
            }
-        add_user($data);
-        if (count($user) == 0) {
-            $arrayError['arrayConnexion'] = 'login or password is incorrect';
-            $_SESSION['arrayError'] = $arrayError;
-            header("location:".WEB_ROUTE.'?controllers=security&view=inscription');
-
-        }else{
-            $_SESSION['userConnect']= $user;
-            if ($user['role']=='ROLE_ADMIN'){
-                header("location:".WEB_ROUTE.'?controllers=admin&view=liste.question');
-            }elseif ($user['role']=='ROLE_JOUEUR'){
-                header("location:".WEB_ROUTE.'?controllers=joueur&view=jeu');
-            }
-        }
+           add_user($data);
+            header("location:".WEB_ROUTE.'?controllers=security&view=connexion');
     }else{
         $_SESSION['arrayError']= $arrayError;
         header("location:".WEB_ROUTE.'?controllers=security&view=inscription');
     }
-    
 }
 function deconnexion(): void {
     unset($_SESSION['userConnect']);
 }
+
 ?>

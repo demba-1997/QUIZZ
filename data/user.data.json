@@ -11,61 +11,48 @@
     {
         "nom": "pp",
         "prenom": "gyg",
-        "datenaiss": "13\/10\/1997",
         "login": "papadembandoye086@gmail.com",
         "password": "KrJW7Bt",
-        "confirmpassword": "KrJW7Bt",
         "role": "ROLE_JOUEUR"
     },
     {
         "nom": "tfrtd",
         "prenom": "jhg",
-        "datenaiss": "12\/2\/2002",
         "login": "papadembandoye@gmail.com",
         "password": "manette",
-        "confirmpassword": "manette",
         "role": "ROLE_ADMIN"
     },
     {
         "nom": "pp",
         "prenom": "jhg",
-        "datenaiss": "13\/10\/1997",
         "login": "papadembandoye086@gmail.com",
         "password": "quatar",
-        "confirmpassword": "quatar",
         "role": "ROLE_JOUEUR"
     },
     {
         "nom": "pp",
         "prenom": "jhg",
-        "datenaiss": "43\/32\/1997",
         "login": "papadembando@gmail.com",
         "password": "fatale",
-        "confirmpassword": "fatale",
         "role": "ROLE_JOUEUR"
     },
     {
         "nom": "papa",
         "prenom": "fdf",
-        "datenaiss": "1\/12\/1667",
         "login": "fatal@gmail.com",
         "password": "fannte",
-        "confirmpassword": "fannte",
         "role": "ROLE_JOUEUR"
     },
     {
         "nom": "traor\u00e9",
         "prenom": "mamadou",
-        "datenaiss": "12\/11\/1998",
         "login": "traore@gmail.com",
         "password": "passer@07",
-        "confirmpassword": "passer@07",
         "role": "ROLE_ADMIN"
     },
     {
         "nom": "sene",
         "prenom": "mouhamede",
-        "datenaiss": "13\/10\/1997",
         "login": "moussa@gmail.com",
         "password": "sultan",
         "role": "ROLE_JOUEUR"
@@ -73,10 +60,27 @@
     {
         "nom": "diouf",
         "prenom": "serigne sam",
-        "datenaiss": "1\/12\/1667",
-        "sexe": "homme",
         "login": "saer@gmail.com",
         "password": "cedera",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "nom": "pasteur",
+        "prenom": "mouhamede",
+        "login": "traoJre@gmail.com",
+        "password": "AAAAAA"
+    },
+    {
+        "nom": "sene",
+        "prenom": "mouhamede",
+        "login": "sager@gmail.com",
+        "password": "aaaaaa"
+    },
+    {
+        "nom": "sene",
+        "prenom": "mouhamede",
+        "login": "sesssion@gmail.com",
+        "password": "aaaaaa",
         "role": "ROLE_JOUEUR"
     }
 ]
