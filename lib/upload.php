@@ -1,12 +1,19 @@
 
 <?php
-function upload_image(){
-    $target_file = UPLOADIMAGE. basename($_FILES["userfile"]["name"]);
-    if (move_uploaded_file($_FILES['userfile']['tmp_name'],$target_file)) {
-        echo "L'image est valide, et a été téléchargé
-               avec succès.";
+function upload_image(string $files){
+    $target_file = UPLOADIMAGE. basename($files["avatar"]["name"]);
+    if (move_uploaded_file($files['avatar']['tmp_name'],$target_file)) {
+        return true;
     } else {
-        echo "Erreur de téléchargement";
+        return false;
+    }
+}
+if (isset($_POST['inscription'])){
+    $target_file = UPLOADIMAGE. basename($files["avatar"]["name"]);
+    if (move_uploaded_file($files['avatar']['tmp_name'],$target_file)) {
+        return true;
+    } else {
+        return false;
     }
 }
 ?>

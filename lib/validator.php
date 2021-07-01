@@ -4,8 +4,8 @@ function est_vide($val): bool {
     return empty($val);
 }
 
-function form_valid($array): bool{
-    return count($array) == 0;
+function form_valid($arrayError): bool{
+    return count($arrayError) == 0;
 }
 
 function est_entier($val): bool {
@@ -87,6 +87,40 @@ function validation_champ($val , string $key ,array &$arrayError){
     }
     
 }
+function valid_input($valeur, string $key, array &$arrayError)
+{
+    if (est_vide($valeur)) {
+        $arrayError[$key] = "Le champ doit etre obligatoire  ";
+    } elseif (est_entier($valeur)) {
+        $arrayError[$key] = "Veuillez poser une question";
+    }
+}
+
+function valid_point($valeur, string $key, array &$arrayError)
+{
+    if (est_vide($valeur)) {
+        $arrayError[$key] = "Le champ doit etre obligatoire ";
+    } elseif ($valeur <= 0) {
+        $arrayError[$key] = "Veillez saisir un nombre positif";
+    }
+}
+
+
+function valid_nbr_reponse($valeur, string $key, array &$arrayError)
+{
+    if (est_vide($valeur)) {
+        $arrayError[$key] = "Ce champ est obligatoire ";
+    } elseif ($valeur <= 0) {
+        $arrayError[$key] = "Veillez saisir un nombre positif";
+    }
+}
+
+function valid_type_reponse($valeur, string $key, array &$arrayError)
+{
+    if (est_vide($valeur)) {
+        $arrayError[$key] = "Ce champ est obligatoire ";
+    }
+}
 /**
  * validation
  *
@@ -159,4 +193,55 @@ if (isset($_POST['inscription'])) {
     $arrayErrors['mois'] = validation_input($_POST['mois'], 'mois');
     $arrayErrors['annee'] = validation_input($_POST['annee'], 'annee');
 }
+
+function provideValuesForValidation(): array
+    {
+        $hexMutations = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
+
+        $testValues = [];
+
+        foreach ($hexMutations as $version) {
+            foreach ($hexMutations as $variant) {
+                $testValues[] = [
+                    'value' => "ff6f8cb0-c57d-{$version}1e1-{$variant}b21-0800200c9a66",
+                    'expected' => true,
+                ];
+            }
+        }
+
+        return array_merge($testValues, [
+            [
+                'value' => 'zf6f8cb0-c57d-11e1-9b21-0800200c9a66',
+                'expected' => false,
+            ],
+            [
+                'value' => '3f6f8cb0-c57d-11e1-9b21-0800200c9a6',
+                'expected' => false,
+            ],
+            [
+                'value' => 'af6f8cb-c57d-11e1-9b21-0800200c9a66',
+                'expected' => false,
+            ],
+            [
+                'value' => 'af6f8cb0c57d11e19b210800200c9a66',
+                'expected' => false,
+            ],
+            [
+                'value' => 'ff6f8cb0-c57da-51e1-9b21-0800200c9a66',
+                'expected' => false,
+            ],
+            [
+                'value' => "ff6f8cb0-c57d-11e1-1b21-0800200c9a66\n",
+                'expected' => false,
+            ],
+            [
+                'value' => "\nff6f8cb0-c57d-11e1-1b21-0800200c9a66",
+                'expected' => false,
+            ],
+            [
+                'value' => "\nff6f8cb0-c57d-11e1-1b21-0800200c9a66\n",
+                'expected' => false,
+            ],
+        ]);
+    }
 ?>

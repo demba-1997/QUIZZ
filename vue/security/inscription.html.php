@@ -11,6 +11,9 @@ require_once(ROUTE_DIR."vue/inc/header.html.php");
 ?>
 <img src="<?=WEB_ROUTE.'img/LOGO.png'  ?>" class="rounded-pill" id="lo" alt="">
 <h3 id="se">Le plaisir de jouer</h3><br/><br/><br/>
+<video autoplay muted loop id="myVideo">
+  <source src="<?=WEB_ROUTE.'img/est.mp4'  ?>" type="video/mp4">
+</video>
   <div class="container mt-5">
         <div class="row">
         <div class="col-md-8 col-sm-12 offset-md-2">
@@ -60,10 +63,10 @@ require_once(ROUTE_DIR."vue/inc/header.html.php");
             <div>
             <label for="">Avatar</label>
             <input type="file" name="avatar" value="" /></div><br/><br/>
-            <a href="<?=WEB_ROUTE.'?controllers=security&view=connexion' ?>">Se connecter</a>
+            <a href="<?=WEB_ROUTE.'?controllers=security&vue=connexion' ?>">Se connecter</a>
                 </div>
                 <div class="">
-                    <button type="submit" name="inscription" class="btn btn-primary">inscription</button>
+                    <button type="submit" name="inscription" class=" btn btn-primary">inscription</button>
                 </div>
             </form>
           </div>

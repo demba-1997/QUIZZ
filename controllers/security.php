@@ -1,11 +1,11 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-    if (isset($_GET['view'])) {
-        if ($_GET['view']== 'connexion') {
+    if (isset($_GET['vue'])) {
+        if ($_GET['vue']== 'connexion') {
             require(ROUTE_DIR.'vue/security/connexion.html.php');
-        }elseif ($_GET['view']== 'inscription') {
+        }elseif ($_GET['vue']== 'inscription') {
             require(ROUTE_DIR.'vue/security/inscription.html.php');
-        }elseif ($_GET['view']== 'deconnexion') {
+        }elseif ($_GET['vue']== 'deconnexion') {
             deconnexion();
             require(ROUTE_DIR.'vue/security/connexion.html.php');
         }
@@ -36,19 +36,19 @@ function connexion(string $login , string $password): void {
         if (count($user) == 0) {
             $arrayError['arrayConnexion'] = 'login or password is incorrect';
             $_SESSION['arrayError'] = $arrayError;
-            header("location:".WEB_ROUTE.'?controllers=security&view=connexion');
+            header("location:".WEB_ROUTE.'?controllers=security&vue=connexion');
 
         }else{
             $_SESSION['userConnect'] = $user;
             if ($user['role']=='ROLE_ADMIN'){
-                header("location:".WEB_ROUTE.'?controllers=admin&view=liste.question');
+                header("location:".WEB_ROUTE.'?controllers=admin&vue=liste.question');
             }elseif ($user['role']=='ROLE_JOUEUR'){
-                header("location:".WEB_ROUTE.'?controllers=joueur&view=jeu');
+                header("location:".WEB_ROUTE.'?controllers=joueur&vue=jeu');
             }
         }
     }else{
         $_SESSION['arrayError']= $arrayError;
-        header("location:".WEB_ROUTE.'?controllers=security&view=connexion');
+        header("location:".WEB_ROUTE.'?controllers=security&vue=connexion');
     }
     
 }
@@ -64,24 +64,42 @@ function inscription(array $data): void {
     // }
     if (est_vide($prenom , $nom)) {
         $_SESSION['arrayError'] = $arrayError;
-        header("location:".WEB_ROUTE.'?controllers=security&view=inscription');
+        header("location:".WEB_ROUTE.'?controllers=security&vue=inscription');
     }
     if (form_valid($arrayError)) {
 
         if (est_admin()) {
-            $data['role'] = 'ROLE_ADMIN';
+            $data['role'] = 'ROLE_JOUEUR';
            }else {
                 $data['role'] = 'ROLE_JOUEUR';
            }
+        //    if (login_exists($login)) {
+        //     $arrayError['login'] = 'ce est login enregistrer';
+        //     $_SESSION['arrayError'] = $arrayError;
+        //     header("location:".WEB_ROUTE.'?controllers=security&vue=inscription');
+        // }
+        // //$extentions = ['jpg','png','jpeg','gif'];
+        // if(empty($files['avatar']['name'])){
+        //     $arrayError['avatar'] = 'le champ est obligatoire';
+        // }elseif ($files['avatar']['size'] > 70000) {
+        //     $arrayError['avatarsize'] = 'la taille est grande';
+        // }
+
+        // if (upload_image($_FILES)){
+        //     $data['avatar'] = $files['avatar']['name']; 
+        // }
            add_user($data);
-            header("location:".WEB_ROUTE.'?controllers=security&view=connexion');
+            header("location:".WEB_ROUTE.'?controllers=security&vue=connexion');
     }else{
         $_SESSION['arrayError']= $arrayError;
-        header("location:".WEB_ROUTE.'?controllers=security&view=inscription');
+        header("location:".WEB_ROUTE.'?controllers=security&vue=inscription');
     }
 }
 function deconnexion(): void {
     unset($_SESSION['userConnect']);
+}
+function supp_user(){
+    
 }
 
 ?>

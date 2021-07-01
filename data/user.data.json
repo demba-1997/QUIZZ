@@ -6,14 +6,16 @@
     {
         "login": "joueur@mail.com",
         "password": "joueur@1",
-        "role": "ROLE_JOUEUR"
+        "role": "ROLE_JOUEUR",
+        "score": "10000"
     },
     {
         "nom": "pp",
         "prenom": "gyg",
         "login": "papadembandoye086@gmail.com",
         "password": "KrJW7Bt",
-        "role": "ROLE_JOUEUR"
+        "role": "ROLE_JOUEUR",
+        "score": "1002"
     },
     {
         "nom": "tfrtd",
@@ -27,21 +29,24 @@
         "prenom": "jhg",
         "login": "papadembandoye086@gmail.com",
         "password": "quatar",
-        "role": "ROLE_JOUEUR"
+        "role": "ROLE_JOUEUR",
+        "score": "1000"
     },
     {
         "nom": "pp",
         "prenom": "jhg",
         "login": "papadembando@gmail.com",
         "password": "fatale",
-        "role": "ROLE_JOUEUR"
+        "role": "ROLE_JOUEUR",
+        "score": "10000"
     },
     {
         "nom": "papa",
         "prenom": "fdf",
         "login": "fatal@gmail.com",
         "password": "fannte",
-        "role": "ROLE_JOUEUR"
+        "role": "ROLE_JOUEUR",
+        "score": "10"
     },
     {
         "nom": "traor\u00e9",
@@ -82,5 +87,227 @@
         "login": "sesssion@gmail.com",
         "password": "aaaaaa",
         "role": "ROLE_JOUEUR"
+    },
+    {
+        "nom": "passer",
+        "prenom": "passer",
+        "login": "passer@gmail.com",
+        "password": "123456",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "nom": "pasteur",
+        "prenom": "pa",
+        "login": "admxs1@mail.com",
+        "password": "fatal123",
+        "role": "ROLE_ADMIN",
+        "id": "60d31f494b015"
+    },
+    {
+        "nom": "sene",
+        "prenom": "pa",
+        "login": "pistere@gmail.com",
+        "password": "fatal123",
+        "role": "ROLE_ADMIN",
+        "id": "60d3200ca109a"
+    },
+    {
+        "nom": "pasteur",
+        "prenom": "gyg",
+        "login": "pisteraa@gmail.com",
+        "password": "issiar",
+        "role": "ROLE_ADMIN",
+        "id": "60d324d010269"
+    },
+    {
+        "id": "60d3516b36841",
+        "nom": "diouf",
+        "prenom": "pa",
+        "login": "passssser@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "nom": "trdsztr",
+        "prenom": "fyzfsd",
+        "login": "pasteeeur@gmail.com",
+        "password": "qsdfghjk",
+        "role": "ROLE_ADMIN",
+        "id": "60d35205a402e"
+    },
+    {
+        "nom": "GD",
+        "prenom": "YFT",
+        "login": "mousssa@gmail.com",
+        "password": "wxcvbn",
+        "id": "60d3528367d1c"
+    },
+    {
+        "nom": "pasteur",
+        "prenom": "fyzfsd",
+        "login": "issiar@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_JOUEUR",
+        "id": "60d352d58d706"
+    },
+    {
+        "id": "60d35ea5ba852",
+        "nom": "bdzuize",
+        "prenom": "dznjjkze",
+        "login": "jssa@gmail.com",
+        "password": "bbbbbb",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d3bc97d67d3",
+        "nom": "fdt",
+        "prenom": "auzdg",
+        "login": "mousa@gmail.com",
+        "password": "festival",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d3c17098de4",
+        "nom": "sd",
+        "prenom": "dze",
+        "login": "papadembandoye@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d3c1d24a54e",
+        "nom": "diouf",
+        "prenom": "paste",
+        "login": "papadembandoyee@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d3c247ce1b7",
+        "nom": "pasteur",
+        "prenom": "jhg",
+        "login": "papadembandoyee@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d46c49de408",
+        "nom": "paste",
+        "prenom": "jhg",
+        "login": "issiar@gmail.com",
+        "password": "AZERTYUI",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d59c4a1b960",
+        "nom": "sqf",
+        "prenom": "dsfq",
+        "login": "fatale@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d5be929ad3e",
+        "nom": "pasteur",
+        "prenom": "gyg",
+        "login": "pisteraa@gmail.com",
+        "password": "issiar",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d71db0582d4",
+        "nom": "paz",
+        "prenom": "gyg",
+        "login": "pisteraa@gmail.com",
+        "password": "123456",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d7518384ada",
+        "nom": "passsss",
+        "prenom": "gyg",
+        "login": "pisteraa@gmail.com",
+        "password": "12345678",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d751dc97c1f",
+        "nom": "pazZED",
+        "prenom": "gyg",
+        "login": "pisteraa@gmail.com",
+        "password": "qsdfghjk",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d752bed9afc",
+        "nom": "pazZE",
+        "prenom": "gyg",
+        "login": "pisteraa@gmail.com",
+        "password": "qsdfghjk",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d9bd15d27f5",
+        "nom": "tester",
+        "prenom": "teste",
+        "login": "teste@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d9bd6fe70ff",
+        "nom": "teste",
+        "prenom": "teste",
+        "login": "teste@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d9c262bd7db",
+        "nom": "testere",
+        "prenom": "testere",
+        "login": "testere@gmail.com",
+        "password": "&\u00e9\"'(-",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d9c4757b733",
+        "nom": "test",
+        "prenom": "test",
+        "login": "testere@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60d9c4e19e13b",
+        "nom": "testeee",
+        "prenom": "testeee",
+        "login": "testere@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60db9856e1867",
+        "nom": "tes",
+        "prenom": "tes",
+        "login": "teste@gmail.com",
+        "password": "azertyui",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60dc685b60366",
+        "nom": "diagne",
+        "prenom": "gorrgui",
+        "login": "diagne2@gmail.com",
+        "password": "12345678",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": "60dc6897e302c",
+        "nom": "diagne ",
+        "prenom": "gorrgui sy",
+        "login": "diagne200@gmail.com",
+        "password": "12345678",
+        "role": "ROLE_ADMIN"
     }
 ]
